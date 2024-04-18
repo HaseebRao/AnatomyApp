@@ -5,10 +5,8 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
-import '../../../../common/app_assets.dart';
 import '../../../../common/app_colors.dart';
 import '../../../../common/app_text_styles.dart';
-
 class Q1View extends GetView<Q1Controller> {
   get itemBuilder => null;
   final Q1Controller controller = Get.put(Q1Controller());
@@ -87,7 +85,6 @@ class Q1View extends GetView<Q1Controller> {
                                   onTap: () {
                                     controller.changeColor(index);
                                   },
-
                                   child: Obx(() {
                                     return Container(
                                       height: 32.h,
