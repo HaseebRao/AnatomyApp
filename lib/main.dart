@@ -5,6 +5,8 @@ import 'package:anatomy/module/Male/malepage/binding/male_binding.dart';
 import 'package:anatomy/module/Male/malepage/view/male_view.dart';
 import 'package:anatomy/module/profile_module/Selection/binding/selection_binding.dart';
 import 'package:anatomy/module/profile_module/Selection/view/selection_view.dart';
+import 'package:anatomy/module/profile_module/bookish/binding/highlight_binding.dart';
+import 'package:anatomy/module/profile_module/bookish/view/highlight_view.dart';
 import 'package:anatomy/module/profile_module/changepassword_screen/binding/changepassword_binding.dart';
 import 'package:anatomy/module/profile_module/changepassword_screen/view/changepassword_view.dart';
 import 'package:anatomy/module/profile_module/editprofile_screen/binding/editprofile_binding.dart';
@@ -42,8 +44,8 @@ class MyApp extends StatelessWidget {
       builder: (_, child) {
         return GetMaterialApp(
           debugShowCheckedModeBanner: false,
-          home: SelectionView(),
-          initialBinding: SelectionBinding(),
+          home: HightLightView(),
+          initialBinding: HightlightBinding(),
         );
       },
     );
